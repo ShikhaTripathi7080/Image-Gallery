@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Image Gallery</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div><h1>Image Gallery</h1></div>
+   <div class="full-img" id="fullImgBox">
+      <img src="/image1.jpg" id="'fullImg" >
+      <span onclick="closeFullImg()">X</span>
+   </div>
+   <div class="img-gallery">
+      <img src="/image1.jpg" onclick="openFullImg(this.src)">
+       <img src="/image2.jpg" onclick="openFullImg(this.src)">
+        <img src="/image3.jpg" onclick="openFullImg(this.src)">
+         <img src="/rocket.jpg" onclick="openFullImg(this.src)">
+          <img src="/moana2.jpg" onclick="openFullImg(this.src)">
+           <img src="/groot.jpg" onclick="openFullImg(this.src)">
+            <img src="/moana.jpg" onclick="openFullImg(this.src)">
+             <img src="/moana1.jpg" onclick="openFullImg(this.src)">
+              <img src="/raya.jpg" onclick="openFullImg(this.src)">
+               <img src="/spiderman.jpg" onclick="openFullImg(this.src)">
+                <img src="/spiderman1.jpg" onclick="openFullImg(this.src)">
+                 <img src="/hulk1.jpg" onclick="openFullImg(this.src)">
+                 
+
+   </div>
+   <script>
+
+     var fullImgBox=document.grtElementById("fullImgBox");
+     var fullImg=document.grtElementById("fullImg");
+
+     function openFullImg(pic){
+        fullImgBox.style.display ="flex";
+        fullImg.src=pic;
+     }
+     function closeFullImg(){
+      fullImgBox.style.display='none';
+     }
+
+   </script>
+</body>
+</html>
